@@ -183,6 +183,28 @@ dtabs.forEach(function(tab){
 /* ── GALLERY FILTER ── */
 var cfbs=document.querySelectorAll('#cfs .cfb');
 var mitems=document.querySelectorAll('#masg .mi');
+function loadGalleryBg(el){
+  if(!el||el.dataset.bgLoaded==='true')return;
+  var bg=el.dataset.bg;
+  if(!bg)return;
+  el.style.backgroundImage=bg;
+  el.dataset.bgLoaded='true';
+  el.classList.add('bg-ready');
+}
+var galleryBgs=document.querySelectorAll('#masg .pbg[data-bg]');
+if('IntersectionObserver' in window){
+  var bgio=new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        loadGalleryBg(entry.target);
+        bgio.unobserve(entry.target);
+      }
+    });
+  },{rootMargin:'250px 0px'});
+  galleryBgs.forEach(function(bg){bgio.observe(bg);});
+}else{
+  galleryBgs.forEach(loadGalleryBg);
+}
 cfbs.forEach(function(btn){
   btn.addEventListener('click',function(){
     cfbs.forEach(function(b){b.classList.remove('active');});btn.classList.add('active');
@@ -201,20 +223,80 @@ cfbs.forEach(function(btn){
 });
 
 /* ── LIGHTBOX ── */
-var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbTag=document.getElementById('lbTag'),lbCap=document.getElementById('lbCap'),lbDate=document.getElementById('lbDate');
-var lbIdx=0,lbVis=[];
+var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbWrap=document.getElementById('lbWrap'),lbTag=document.getElementById('lbTag'),lbCap=document.getElementById('lbCap'),lbDate=document.getElementById('lbDate');
+var lbIdx=0,lbVis=[],lbSwiper=null;
 function getVis(){return Array.from(mitems).filter(function(i){return !i.classList.contains('fil');});}
+function syncLbMeta(item){
+  if(!item)return;
+  lbTag.textContent=item.dataset.tag||'';
+  lbCap.textContent=item.dataset.cap||'';
+  lbDate.textContent=item.dataset.date||'';
+}
+function renderLbSlides(items){
+  if(!lbWrap)return;
+  lbWrap.innerHTML='';
+  if(!items.length){
+    lbWrap.innerHTML='<div class="swiper-slide lb-slide"><span style="font-size:48px;opacity:.15">&#128247;</span></div>';
+    return;
+  }
+  items.forEach(function(item){
+    var bg=item.querySelector('.pbg');
+    loadGalleryBg(bg);
+    var slide=document.createElement('div');
+    slide.className='swiper-slide lb-slide';
+    slide.style.cssText=(bg?bg.style.cssText:'')+';min-height:300px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;';
+    lbWrap.appendChild(slide);
+  });
+}
+function ensureLbSwiper(startIdx){
+  if(!window.Swiper||!lbImg)return null;
+  if(lbSwiper){
+    lbSwiper.update();
+    lbSwiper.slideTo(startIdx||0,0,false);
+    return lbSwiper;
+  }
+  lbSwiper=new Swiper('#lbImg',{
+    initialSlide:startIdx||0,
+    speed:400,
+    allowTouchMove:true,
+    simulateTouch:true,
+    resistanceRatio:0.85,
+    observer:true,
+    observeParents:true,
+    on:{
+      slideChange:function(){
+        lbIdx=this.activeIndex;
+        syncLbMeta(lbVis[lbIdx]);
+      }
+    }
+  });
+  return lbSwiper;
+}
 function openLb(idx){
   lbVis=getVis();lbIdx=idx;
   var item=lbVis[lbIdx];if(!item)return;
-  var bg=item.querySelector('.pbg');
-  lbImg.style.cssText=(bg?bg.style.cssText:'')+';min-height:300px;border-radius:4px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;';
-  lbImg.innerHTML='';
-  lbTag.textContent=item.dataset.tag||'';lbCap.textContent=item.dataset.cap||'';lbDate.textContent=item.dataset.date||'';
+  renderLbSlides(lbVis);
+  if(window.Swiper){
+    ensureLbSwiper(lbIdx);
+  }else{
+    var bg=item.querySelector('.pbg');
+    loadGalleryBg(bg);
+    lbWrap.innerHTML='<div class="swiper-slide lb-slide" style="'+(bg?bg.style.cssText:'')+';min-height:300px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;"></div>';
+  }
+  syncLbMeta(item);
   lb.classList.add('open');document.body.style.overflow='hidden';
 }
 function closeLb(){lb.classList.remove('open');document.body.style.overflow='';}
-function lbNav(d){lbVis=getVis();lbIdx=(lbIdx+d+lbVis.length)%lbVis.length;openLb(lbIdx);}
+function lbNav(d){
+  lbVis=getVis();
+  if(!lbVis.length)return;
+  lbIdx=(lbIdx+d+lbVis.length)%lbVis.length;
+  if(lbSwiper){
+    lbSwiper.slideTo(lbIdx);
+  }else{
+    openLb(lbIdx);
+  }
+}
 mitems.forEach(function(item){item.addEventListener('click',function(){lbVis=getVis();openLb(lbVis.indexOf(item));});});
 document.getElementById('lbClose').addEventListener('click',closeLb);
 document.getElementById('lbPrev').addEventListener('click',function(){lbNav(-1);});

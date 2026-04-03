@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Innovation & DIY Club — MITS Gwalior. Built on curiosity. Driven by making.">
+<title>Innovation & DIY — MITS Gwalior</title>
+<script>
+if('scrollRestoration' in history){history.scrollRestoration='manual';}
+window.scrollTo(0,0);
+document.documentElement.classList.add('is-loading');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body class="is-loading">
+
+<div class="loader" id="siteLoader" aria-hidden="true">
+  <div class="loader__inner">
+    <div class="loader__mark">Innovation <span>&amp;</span> DIY</div>
+    <div class="loader__grid" aria-hidden="true">
+      <div class="loader__sq"></div>
+      <div class="loader__sq"></div>
+      <div class="loader__sq"></div>
+      <div class="loader__sq"></div>
+    </div>
+    <div class="loader__text" id="loaderText">Loading</div>
+    <div class="loader__line" aria-hidden="true"></div>
+  </div>
+</div>
+
+<div class="site-shell">
+
+<div class="cursor" id="cursor">
+  <div class="cursor__ring" id="cr"></div>
+  <div class="cursor__dot" id="cd"></div>
+  <div class="cursor__label" id="cl">View</div>
+</div>
+<div id="pb"></div>
+
+<nav id="mainnav">
+  <a href="#home" class="nav-logo">I<span>&amp;</span>DIY</a>
+  <ul class="nl">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hbg" id="hbg" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="ndrawer" id="ndrawer" role="dialog" aria-label="Navigation">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#events">Events</a>
+  <a href="#team">Team</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ═══════════════════ HOME ═══════════════════ -->
+<div id="home" style="scroll-margin-top:80px"></div>
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-year">2021</div>
+  <div class="hero-badge">
+    <span class="hero-badge__label">Est.</span>
+    <span class="hero-badge__value">MITS · 2021</span>
+    <span class="hero-badge__label" style="margin-top:10px">Status</span>
+    <span class="hero-badge__value">&#9679; Open to all</span>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow__dot"></div>
+      <span class="hero-eyebrow__text">Innovation &amp; DIY Club — MITS Gwalior</span>
+    </div>
+    <h1 class="hero-headline">
+      <span class="line"><span>Built on</span></span>
+      <span class="line"><span><em>curiosity.</em></span></span>
+      <span class="line"><span>Driven by making.</span></span>
+    </h1>
+    <div class="hero-bottom">
+      <p class="hero-mission">A community for <strong>makers, creators &amp; innovators.</strong> No prerequisites. No gatekeeping. Just people who want to build things that didn't exist before.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="bp">Join the Club <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="#gallery" class="bg">See our work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mqs" aria-hidden="true">
+  <div class="mqt">
+    <div class="mqi"><span class="sep"></span>Do It Yourself</div><div class="mqi"><span class="sep"></span>120+ Members</div><div class="mqi"><span class="sep"></span>30+ Projects Built</div><div class="mqi"><span class="sep"></span>12+ Events</div><div class="mqi"><span class="sep"></span>Creative &middot; Creation &middot; Collaboration</div><div class="mqi"><span class="sep"></span>Open to All Branches</div><div class="mqi"><span class="sep"></span>Est. 2021 &middot; MITS Gwalior</div>
+    <div class="mqi"><span class="sep"></span>Do It Yourself</div><div class="mqi"><span class="sep"></span>120+ Members</div><div class="mqi"><span class="sep"></span>30+ Projects Built</div><div class="mqi"><span class="sep"></span>12+ Events</div><div class="mqi"><span class="sep"></span>Creative &middot; Creation &middot; Collaboration</div><div class="mqi"><span class="sep"></span>Open to All Branches</div><div class="mqi"><span class="sep"></span>Est. 2021 &middot; MITS Gwalior</div>
+  </div>
+</div>
+
+<section class="stats-s">
+  <div class="stat-c rv d1"><div class="stat-num"><span class="counter" data-target="120">0</span><span class="acc">+</span></div><div class="stat-lbl">Active Members</div></div>
+  <div class="stat-c rv d2"><div class="stat-num"><span class="counter" data-target="30">0</span><span class="acc">+</span></div><div class="stat-lbl">Projects Built</div></div>
+  <div class="stat-c rv d3"><div class="stat-num"><span class="counter" data-target="12">0</span><span class="acc">+</span></div><div class="stat-lbl">Events Run</div></div>
+  <div class="stat-c rv d4"><div class="stat-num"><span class="counter" data-target="5">0</span></div><div class="stat-lbl">Years of Impact</div></div>
+</section>
+
+<section class="hvals">
+  <div>
+    <div class="stag rv d1">Core philosophy</div>
+    <h2 class="hvals-h rv d2">We build things.<br><em>Because why not?</em></h2>
+    <p class="hvals-b rv d3">Innovation &amp; DIY is where the classroom meets the workshop. We believe the best way to learn is to break, prototype, fail, and try again — together.</p>
+  </div>
+  <div class="hvals-r">
+    <div class="vi"><div class="vi-icon">&#9889;</div><div><div class="vi-name">Creative</div><div class="vi-desc">Imagine beyond constraints. Every project starts with a "what if."</div></div></div>
+    <div class="vi"><div class="vi-icon">&#128297;</div><div><div class="vi-name">Creation</div><div class="vi-desc">Ideas mean nothing unbuilt. We prototype, iterate, and ship.</div></div></div>
+    <div class="vi"><div class="vi-icon">&#129309;</div><div><div class="vi-name">Collaboration</div><div class="vi-desc">The best makers don't work alone. We cross branches, disciplines, and ideas.</div></div></div>
+  </div>
+</section>
+
+<div class="hcta">
+  <p class="hcta-t">Got an idea? <strong>Let's build it.</strong><br>No experience needed — just curiosity.</p>
+  <a href="#contact" class="bp" style="font-size:14px;padding:16px 36px">Get Involved <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div>
+
+<!-- ═══════════════════ ABOUT ═══════════════════ -->
+<div id="about" style="scroll-margin-top:80px"></div>
+<section class="about-hero">
+  <div>
+    <div class="stag rv d1">Our story</div>
+    <h1 class="ah-heading rv d2">Who we<br><em>are.</em></h1>
+    <p class="ah-intro rv d3">Innovation &amp; DIY is a college club at <strong>Madhav Institute of Technology &amp; Science, Gwalior</strong> — born in 2021 from a simple belief: the best education happens when you're building something real. No prerequisites. No gatekeeping. Just a community where curiosity is the only entry requirement.</p>
+  </div>
+  <div class="info-panel rvr d2">
+    <div class="ir"><span class="ik">Founded</span><span class="iv">2021</span></div>
+    <div class="ir"><span class="ik">Institute</span><span class="iv">MITS Gwalior</span></div>
+    <div class="ir"><span class="ik">Open to</span><span class="iv">All branches &amp; years</span></div>
+    <div class="ir"><span class="ik">Active members</span><span class="iv acc">120+</span></div>
+    <div class="ir"><span class="ik">Projects shipped</span><span class="iv acc">30+</span></div>
+    <div class="ir"><span class="ik">Core values</span><span class="iv">Creative &middot; Creation &middot; Collaboration</span></div>
+    <div class="ir"><span class="ik">Status</span><span class="iv acc">&#9679; Recruiting</span></div>
+  </div>
+</section>
+
+<section class="story-s">
+  <div class="story-lbl rv">Origin</div>
+  <div class="rv d1">
+    <h2 class="story-h">From a conversation<br>to a community.</h2>
+    <div class="story-b">
+      <p>Innovation &amp; DIY started with a handful of students frustrated by the gap between what they were learning in class and what they wanted to <strong>build in the real world.</strong></p>
+      <p>Since 2021, that space has grown into a 120+ member community that runs hackathons, hosts workshops, mentors beginners, and ships projects that solve real problems.</p>
+      <p>The philosophy hasn't changed: <strong>show up curious, leave having made something.</strong></p>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:2px">
+    <div class="pq rv d2"><p class="pq-t">The best way to learn engineering is to build something that breaks — and then fix it.</p><span class="pq-a">— Club founding principle</span></div>
+    <div class="pq rv d3"><p class="pq-t">We don't wait for the perfect idea. We start with a rough one and prototype our way to something great.</p><span class="pq-a">— From our first workshop, 2021</span></div>
+  </div>
+</section>
+
+<section class="dept-s">
+  <div class="dept-hd rv">
+    <div><div class="stag">How we're organised</div><h2 class="dept-hh">Six teams.<br><em>One mission.</em></h2></div>
+    <span class="dept-ct">06 departments</span>
+  </div>
+  <div class="dept-g">
+    <div class="dc rv d1"><div class="dc-idx">01</div><span class="dc-ico">&#9881;&#65039;</span><div class="dc-name">Technical</div><div class="dc-desc">The builders. Hardware, firmware, and software. Lead: Mohit Sharma &middot; Co-lead: Mahi Gupta</div><svg class="dc-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="dc rv d2"><div class="dc-idx">02</div><span class="dc-ico">&#128221;</span><div class="dc-name">Content &amp; Documentation</div><div class="dc-desc">The storytellers. Lead: Riya Verma &middot; Co-lead: Karan Patel</div><svg class="dc-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="dc rv d3"><div class="dc-idx">03</div><span class="dc-ico">&#127912;</span><div class="dc-name">Design &amp; Media</div><div class="dc-desc">The visionaries. Brand identity, social media, photography.</div><svg class="dc-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="dc rv d1"><div class="dc-idx">04</div><span class="dc-ico">&#128226;</span><div class="dc-name">Marketing, PR &amp; Outreach</div><div class="dc-desc">The connectors. Grow our reach, build partnerships.</div><svg class="dc-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="dc rv d2"><div class="dc-idx">05</div><span class="dc-ico">&#128300;</span><div class="dc-name">Projects &amp; R&amp;D</div><div class="dc-desc">The experimenters. Propose, prototype, and push boundaries.</div><svg class="dc-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="dc rv d3"><div class="dc-idx">06</div><span class="dc-ico">&#127919;</span><div class="dc-name">Events &amp; Operations</div><div class="dc-desc">The coordinators. Hackathons, workshops, competitions.</div><svg class="dc-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  </div>
+</section>
+
+<section class="mission-s">
+  <div class="stag rv">Our north star</div>
+  <h2 class="mission-stmt rv d2">Built on <span class="hl">curiosity.</span><br>Driven by <span class="hl">making.</span></h2>
+  <div class="mission-tags rv d3">
+    <span class="mt">Prototype</span><span class="mt">Collaborate</span><span class="mt">Compete</span><span class="mt">Learn by doing</span><span class="mt">No gatekeeping</span><span class="mt">Open to all</span><span class="mt">Do it yourself</span>
+  </div>
+</section>
+
+<!-- ═══════════════════ EVENTS ═══════════════════ -->
+<div id="events" style="scroll-margin-top:80px"></div>
+<header class="ev-hdr">
+  <div><div class="stag rv d1">What we run</div><h1 class="ev-h rv d2">12+ Events.<br><em>All made.</em></h1></div>
+  <div class="rv d3">
+    <p class="ev-desc">From late-night <strong>hackathons</strong> to hands-on <strong>workshops</strong>, speaker talks to project showcases — we run events that push you to make something you didn't think you could.</p>
+    <div class="ftabs" id="ftabs">
+      <button class="fb active" data-filter="all">All</button>
+      <button class="fb" data-filter="hackathon">Hackathon</button>
+      <button class="fb" data-filter="workshop">Workshop</button>
+      <button class="fb" data-filter="talk">Talk</button>
+      <button class="fb" data-filter="comp">Competition</button>
+    </div>
+  </div>
+</header>
+
+<section class="feat-s">
+  <div class="stag rv">Next up</div>
+  <div class="feat-card rv d2">
+    <div class="fl">
+      <div>
+        <div class="fst"><div class="fst-dot"></div>Upcoming &middot; Registration open</div>
+        <h2 class="ft">BuildSprint 2025</h2>
+        <p class="fd">Our flagship 24-hour hackathon. 100+ participants, cross-disciplinary teams, real problems. You bring the idea — we bring the tools, mentors, and midnight snacks.</p>
+        <div class="fm">
+          <div class="fmi"><span class="fmk">Date</span><span class="fmv">Nov 15–16, 2025</span></div>
+          <div class="fmi"><span class="fmk">Duration</span><span class="fmv">24 Hours</span></div>
+          <div class="fmi"><span class="fmk">Venue</span><span class="fmv">MITS Campus</span></div>
+          <div class="fmi"><span class="fmk">Team size</span><span class="fmv">2 – 4 members</span></div>
+        </div>
+        <a href="#contact" class="bp">Register Now <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 11L11 2M11 2H5M11 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <svg class="fa-arr" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 15L15 3M15 3H7M15 3V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div class="fr">
+      <div class="fi-inner">
+        <div class="ev-vis">
+          <div class="evc1"></div><div class="evc2"></div>
+          <div class="evctr">&#128640;</div>
+        </div>
+      </div>
+      <div class="fr-lbl">BuildSprint &middot; 2025</div>
+    </div>
+  </div>
+</section>
+
+<section class="evlist-s">
+  <div class="evlist-hdr rv"><span class="evlist-lbl">All events</span><span class="evcnt" id="evcnt">12 events</span></div>
+  <div id="evlist">
+    <div class="ev-row" data-filter="hackathon"><span class="ern">01</span><div><div class="ert">BuildSprint 2025</div><div class="ert-sub">24-hour flagship hackathon &middot; MITS Campus</div></div><span class="etype ty-h">Hackathon</span><span class="erdate">Nov 15–16, 2025</span><span class="erstat st-up">Upcoming</span><svg class="er-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="ev-row" data-filter="workshop"><span class="ern">02</span><div><div class="ert">Arduino Bootcamp</div><div class="ert-sub">Hands-on microcontroller workshop for beginners</div></div><span class="etype ty-w">Workshop</span><span class="erdate">Oct 28, 2025</span><span class="erstat st-up">Upcoming</span><svg class="er-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="ev-row" data-filter="hackathon"><span class="ern">03</span><div><div class="ert">BuildSprint 2024</div><div class="ert-sub">100+ participants &middot; 22 projects submitted</div></div><span class="etype ty-h">Hackathon</span><span class="erdate">Nov 2024</span><span class="erstat st-past">Completed</span><svg class="er-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="ev-row" data-filter="workshop"><span class="ern">04</span><div><div class="ert">PCB Design Workshop</div><div class="ert-sub">KiCad from scratch &middot; 40 attendees</div></div><span class="etype ty-w">Workshop</span><span class="erdate">Sep 2024</span><span class="erstat st-past">Completed</span><svg class="er-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="ev-row" data-filter="talk"><span class="ern">05</span><div><div class="ert">Founder's Talk: Building at MITS</div><div class="ert-sub">Alumni panel &middot; Startup journeys from campus</div></div><span class="etype ty-t">Talk</span><span class="erdate">Aug 2024</span><span class="erstat st-past">Completed</span><svg class="er-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="ev-row" data-filter="comp"><span class="ern">06</span><div><div class="ert">Robowar 2024</div><div class="ert-sub">Inter-college bot battle &middot; 16 teams</div></div><span class="etype ty-c">Competition</span><span class="erdate">Mar 2024</span><span class="erstat st-past">Completed</span><svg class="er-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="ev-row" data-filter="workshop"><span class="ern">07</span><div><div class="ert">3D Printing &amp; CAD Sprint</div><div class="ert-sub">Fusion 360 + Ultimaker &middot; Design to physical in 3hrs</div></div><span class="etype ty-w">Workshop</span><span class="erdate">Jan 2024</span><span class="erstat st-past">Completed</span><svg class="er-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="ev-row" data-filter="hackathon"><span class="ern">08</span><div><div class="ert">BuildSprint 2023</div><div class="ert-sub">Theme: Sustainability &middot; 18 teams competed</div></div><span class="etype ty-h">Hackathon</span><span class="erdate">Nov 2023</span><span class="erstat st-past">Completed</span><svg class="er-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="ev-row" data-filter="talk"><span class="ern">09</span><div><div class="ert">Open Source Contribution Day</div><div class="ert-sub">First PR workshop &middot; GitHub fundamentals</div></div><span class="etype ty-t">Workshop</span><span class="erdate">Sep 2023</span><span class="erstat st-past">Completed</span><svg class="er-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="ev-row" data-filter="comp"><span class="ern">10</span><div><div class="ert">Ideathon 2023</div><div class="ert-sub">Pitch your product idea &middot; 30 teams &middot; 3 winners</div></div><span class="etype ty-c">Competition</span><span class="erdate">Feb 2023</span><span class="erstat st-past">Completed</span><svg class="er-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="ev-row" data-filter="hackathon"><span class="ern">11</span><div><div class="ert">BuildSprint 2022</div><div class="ert-sub">The second edition &middot; 60+ participants</div></div><span class="etype ty-h">Hackathon</span><span class="erdate">Nov 2022</span><span class="erstat st-past">Completed</span><svg class="er-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="ev-row" data-filter="hackathon"><span class="ern">12</span><div><div class="ert">BuildSprint 2021</div><div class="ert-sub">The one that started it all &middot; 30 founders</div></div><span class="etype ty-h">Hackathon</span><span class="erdate">Dec 2021</span><span class="erstat st-past">Completed</span><svg class="er-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  </div>
+  <div class="upband rv">
+    <p class="upband-t">More events coming.<br><strong>Stay in the loop.</strong></p>
+    <button class="notify-b">Notify Me <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M6.5 1v1M9.5 4a3 3 0 10-6 0c0 3-1.5 4-1.5 4h9s-1.5-1-1.5-4M5 10a1.5 1.5 0 003 0" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  </div>
+</section>
+
+<section class="tl-s">
+  <div class="tl-hdr"><div><div class="stag rv">Four years in</div><h2 class="tl-hh rv d2">Events <em>over time.</em></h2></div></div>
+  <div class="swiper tl-swiper" id="tlSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide tli"><div class="tl-dot"></div><div class="tl-yr">Dec 2021</div><div class="tl-en">BuildSprint 2021</div><div class="tl-ed">Club launch &middot; 30 participants</div></div>
+      <div class="swiper-slide tli"><div class="tl-dot"></div><div class="tl-yr">Feb 2022</div><div class="tl-en">First Workshop</div><div class="tl-ed">Intro to Raspberry Pi</div></div>
+      <div class="swiper-slide tli"><div class="tl-dot"></div><div class="tl-yr">Nov 2022</div><div class="tl-en">BuildSprint 2022</div><div class="tl-ed">60+ participants</div></div>
+      <div class="swiper-slide tli"><div class="tl-dot"></div><div class="tl-yr">Feb 2023</div><div class="tl-en">Ideathon 2023</div><div class="tl-ed">30 teams &middot; 3 winners</div></div>
+      <div class="swiper-slide tli"><div class="tl-dot"></div><div class="tl-yr">Nov 2023</div><div class="tl-en">BuildSprint 2023</div><div class="tl-ed">Theme: Sustainability</div></div>
+      <div class="swiper-slide tli"><div class="tl-dot"></div><div class="tl-yr">Nov 2024</div><div class="tl-en">BuildSprint 2024</div><div class="tl-ed">100+ participants</div></div>
+      <div class="swiper-slide tli tla"><div class="tl-dot"></div><div class="tl-yr">Nov 2025</div><div class="tl-en">BuildSprint 2025</div><div class="tl-ed">Coming soon &middot; Register now</div></div>
+    </div>
+  </div>
+  <div class="tl-controls">
+    <div class="tl-nav">
+      <button class="tl-btn tl-prev" type="button" aria-label="Previous timeline event"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11 7H3M7 3 3 7l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="tl-btn tl-next" type="button" aria-label="Next timeline event"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+    <div class="tl-page" id="tlPagination"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════ TEAM ═══════════════════ -->
+<div id="team" style="scroll-margin-top:80px"></div>
+<header class="team-hdr">
+  <div class="team-hdr-in">
+    <div><div class="stag rv d1">The people</div><h1 class="team-hh rv d2">The minds<br><em>behind it.</em></h1></div>
+    <div class="rv d3">
+      <p class="team-desc">Innovation &amp; DIY runs on <strong>student energy</strong> — six departments, one shared mission.</p>
+      <div class="team-stats">
+        <div class="ts"><span class="ts-n">3<span class="acc">+</span></span><span class="ts-l">Leadership</span></div>
+        <div class="ts"><span class="ts-n">6</span><span class="ts-l">Departments</span></div>
+        <div class="ts"><span class="ts-n">120<span class="acc">+</span></span><span class="ts-l">Total members</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="lead-s">
+  <div class="stag rv">Leadership</div>
+  <div class="lead-g">
+    <div class="lc rv d1"><div class="lc-idx">01</div><div class="la"><div class="la-ring"></div><div class="la-in">SR</div></div><div class="lc-role">President</div><div class="lc-name">Sumit Rathor</div><div class="lc-handle">@sumitrathor</div></div>
+    <div class="lc rv d2"><div class="lc-idx">02</div><div class="la"><div class="la-ring"></div><div class="la-in">UJ</div></div><div class="lc-role">Vice-President</div><div class="lc-name">Unnati Jadon</div><div class="lc-handle">@unnatijadon</div></div>
+    <div class="lc rv d3"><div class="lc-idx">03</div><div class="la"><div class="la-ring"></div><div class="la-in">AK</div></div><div class="lc-role">Vice-President</div><div class="lc-name">Aman Kumar</div><div class="lc-handle">@amankumar</div></div>
+  </div>
+</section>
+
+<section class="mem-s">
+  <div class="mem-hdr rv">
+    <div><div class="stag">Departments</div><h2 class="mem-hh">Six teams.<br><em>One goal.</em></h2></div>
+    <div class="dtabs" id="dtabs">
+      <button class="dt active" data-dept="technical">Technical</button>
+      <button class="dt" data-dept="content">Content</button>
+      <button class="dt" data-dept="design">Design</button>
+      <button class="dt" data-dept="marketing">Marketing</button>
+      <button class="dt" data-dept="rnd">Projects &amp; R&amp;D</button>
+      <button class="dt" data-dept="events2">Events</button>
+    </div>
+  </div>
+  <div class="dp active" id="dept-technical">
+    <div class="dp-hdr"><div class="ldc"><div class="ld-badge">Lead</div><div class="lda">MS</div><div><div class="ld-ti">Department Lead</div><div class="ld-name">Mohit Sharma</div><div class="ld-dept">Technical Dept.</div></div></div><div class="ldc"><div class="ld-badge">Co-lead</div><div class="lda">MG</div><div><div class="ld-ti">Department Co-lead</div><div class="ld-name">Mahi Gupta</div><div class="ld-dept">Technical Dept.</div></div></div></div>
+    <div class="mem-g"><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div></div>
+  </div>
+  <div class="dp" id="dept-content">
+    <div class="dp-hdr"><div class="ldc"><div class="ld-badge">Lead</div><div class="lda">RV</div><div><div class="ld-ti">Department Lead</div><div class="ld-name">Riya Verma</div><div class="ld-dept">Content &amp; Documentation</div></div></div><div class="ldc"><div class="ld-badge">Co-lead</div><div class="lda">KP</div><div><div class="ld-ti">Department Co-lead</div><div class="ld-name">Karan Patel</div><div class="ld-dept">Content &amp; Documentation</div></div></div></div>
+    <div class="mem-g"><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div></div>
+  </div>
+  <div class="dp" id="dept-design"><div class="dp-hdr"><div class="ldc"><div class="ld-badge">Lead</div><div class="lda">—</div><div><div class="ld-ti">Department Lead</div><div class="ld-name">TBD</div><div class="ld-dept">Design &amp; Media</div></div></div><div class="ldc"><div class="ld-badge">Co-lead</div><div class="lda">—</div><div><div class="ld-ti">Department Co-lead</div><div class="ld-name">TBD</div><div class="ld-dept">Design &amp; Media</div></div></div></div><div class="mem-g"><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div></div></div>
+  <div class="dp" id="dept-marketing"><div class="dp-hdr"><div class="ldc"><div class="ld-badge">Lead</div><div class="lda">—</div><div><div class="ld-ti">Department Lead</div><div class="ld-name">TBD</div><div class="ld-dept">Marketing &amp; Outreach</div></div></div><div class="ldc"><div class="ld-badge">Co-lead</div><div class="lda">—</div><div><div class="ld-ti">Department Co-lead</div><div class="ld-name">TBD</div><div class="ld-dept">Marketing &amp; Outreach</div></div></div></div><div class="mem-g"><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div></div></div>
+  <div class="dp" id="dept-rnd"><div class="dp-hdr"><div class="ldc"><div class="ld-badge">Lead</div><div class="lda">—</div><div><div class="ld-ti">Department Lead</div><div class="ld-name">TBD</div><div class="ld-dept">Projects &amp; R&amp;D</div></div></div><div class="ldc"><div class="ld-badge">Co-lead</div><div class="lda">—</div><div><div class="ld-ti">Department Co-lead</div><div class="ld-name">TBD</div><div class="ld-dept">Projects &amp; R&amp;D</div></div></div></div><div class="mem-g"><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div></div></div>
+  <div class="dp" id="dept-events2"><div class="dp-hdr"><div class="ldc"><div class="ld-badge">Lead</div><div class="lda">—</div><div><div class="ld-ti">Department Lead</div><div class="ld-name">TBD</div><div class="ld-dept">Events &amp; Operations</div></div></div><div class="ldc"><div class="ld-badge">Co-lead</div><div class="lda">—</div><div><div class="ld-ti">Department Co-lead</div><div class="ld-name">TBD</div><div class="ld-dept">Events &amp; Operations</div></div></div></div><div class="mem-g"><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div><div class="mc tbd"><div class="ma">+</div><div class="mn">Open Seat</div><div class="mr">Member</div></div></div></div>
+  <div class="join-band rv"><p class="join-t"><strong>Your name could be here.</strong><br>We're always looking for motivated students.</p><a href="#contact" class="bp" style="font-size:12px;padding:12px 24px">Apply to Join <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 11L11 2M11 2H5M11 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+</section>
+
+<section class="vals-strip">
+  <div class="vsi rv d1"><span class="vs-ico">&#9889;</span><div class="vs-w">Creative</div><div class="vs-d">Every idea starts with imagination. Bold, unconventional thinking across everything we do.</div></div>
+  <div class="vsi rv d2"><span class="vs-ico">&#128297;</span><div class="vs-w">Creation</div><div class="vs-d">We don't just talk about building things. We actually build them.</div></div>
+  <div class="vsi rv d3"><span class="vs-ico">&#129309;</span><div class="vs-w">Collaboration</div><div class="vs-d">The best work at I&amp;DIY happens when different branches and years bring ideas together.</div></div>
+</section>
+
+<!-- ═══════════════════ GALLERY ═══════════════════ -->
+<div id="gallery" style="scroll-margin-top:80px"></div>
+<header class="gal-hdr">
+  <div><div class="stag rv d1">Moments &amp; memories</div><h1 class="gal-h rv d2">In the<br>making.<em>Always.</em></h1></div>
+  <div class="rv d3">
+    <p class="gal-desc">Four years of <strong>workshops, hackathons, builds, and late nights.</strong> These are the moments that happen when curiosity meets a soldering iron.</p>
+    <div class="cfs" id="cfs">
+      <button class="cfb active" data-cat="all">All</button>
+      <button class="cfb" data-cat="hackathon">Hackathon</button>
+      <button class="cfb" data-cat="workshop">Workshop</button>
+      <button class="cfb" data-cat="builds">Builds</button>
+      <button class="cfb" data-cat="team">Team</button>
+    </div>
+  </div>
+</header>
+
+<section class="mas-s">
+  <div class="mas-g" id="masg">
+    <div class="mi" data-cat="hackathon" data-cap="BuildSprint 2024 — The opening ceremony" data-tag="Hackathon" data-date="Nov 2024"><div class="ph r-ls"><div class="pbg" style="background-image:linear-gradient(135deg,rgba(10,10,10,.18) 0%,rgba(10,10,10,.58) 100%),url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center"></div><div class="pov"><span class="p-tag">Hackathon</span><span class="p-cap">BuildSprint 2024 — Opening</span><span class="p-date">Nov 2024</span></div><span class="p-cat">Hackathon</span></div></div>
+    <div class="mi" data-cat="workshop" data-cap="Arduino Bootcamp — first circuit alive" data-tag="Workshop" data-date="Sep 2024"><div class="ph r-pt"><div class="pbg" style="background-image:linear-gradient(160deg,rgba(10,10,10,.12) 0%,rgba(10,10,10,.56) 100%),url('https://images.unsplash.com/photo-1729883623845-a26ea5f350e4?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center"></div><div class="pov"><span class="p-tag">Workshop</span><span class="p-cap">Arduino Bootcamp</span><span class="p-date">Sep 2024</span></div><span class="p-cat">Workshop</span></div></div>
+    <div class="mi" data-cat="builds" data-cap="R&D Lab — prototype in progress" data-tag="Builds" data-date="Aug 2024"><div class="ph r-sq"><div class="pbg" style="background-image:linear-gradient(120deg,rgba(10,10,10,.1) 0%,rgba(10,10,10,.54) 100%),url('https://images.unsplash.com/photo-1695712551666-e0c354b1e6b9?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center"></div><div class="pov"><span class="p-tag">Builds</span><span class="p-cap">R&amp;D Lab — Prototype Session</span><span class="p-date">Aug 2024</span></div><span class="p-cat">Builds</span></div></div>
+    <div class="mi" data-cat="team" data-cap="Leadership team 2024-25" data-tag="Team" data-date="Jul 2024"><div class="ph r-wd"><div class="pbg" style="background-image:linear-gradient(100deg,rgba(10,10,10,.14) 0%,rgba(10,10,10,.5) 100%),url('https://images.unsplash.com/photo-1622675363311-3e1904dc1885?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center"></div><div class="pov"><span class="p-tag">Team</span><span class="p-cap">Leadership Team 2024–25</span><span class="p-date">Jul 2024</span></div><span class="p-cat">Team</span></div></div>
+    <div class="mi" data-cat="hackathon" data-cap="BuildSprint 2024 — final presentations" data-tag="Hackathon" data-date="Nov 2024"><div class="ph r-pt"><div class="pbg" style="background-image:linear-gradient(170deg,rgba(10,10,10,.12) 0%,rgba(10,10,10,.58) 100%),url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center"></div><div class="pov"><span class="p-tag">Hackathon</span><span class="p-cap">BuildSprint 2024 — Finals</span><span class="p-date">Nov 2024</span></div><span class="p-cat">Hackathon</span></div></div>
+    <div class="mi" data-cat="workshop" data-cap="PCB Design workshop — KiCad session" data-tag="Workshop" data-date="Sep 2024"><div class="ph r-ls"><div class="pbg" style="background-image:linear-gradient(145deg,rgba(10,10,10,.12) 0%,rgba(10,10,10,.58) 100%),url('https://images.unsplash.com/photo-1705579607342-13c6dad7b51d?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center"></div><div class="pov"><span class="p-tag">Workshop</span><span class="p-cap">PCB Design Workshop</span><span class="p-date">Sep 2024</span></div><span class="p-cat">Workshop</span></div></div>
+    <div class="mi" data-cat="builds" data-cap="3D printing marathon" data-tag="Builds" data-date="Jan 2024"><div class="ph r-tl"><div class="pbg" style="background-image:linear-gradient(155deg,rgba(10,10,10,.08) 0%,rgba(10,10,10,.52) 100%),url('https://images.unsplash.com/photo-1762529483919-c041f72e7342?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center"></div><div class="pov"><span class="p-tag">Builds</span><span class="p-cap">3D Printing Marathon</span><span class="p-date">Jan 2024</span></div><span class="p-cat">Builds</span></div></div>
+    <div class="mi" data-cat="team" data-cap="Ideathon 2023 — winners" data-tag="Team" data-date="Feb 2023"><div class="ph r-sq"><div class="pbg" style="background-image:linear-gradient(110deg,rgba(10,10,10,.12) 0%,rgba(10,10,10,.5) 100%),url('https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center"></div><div class="pov"><span class="p-tag">Team</span><span class="p-cap">Ideathon 2023 — Winners</span><span class="p-date">Feb 2023</span></div><span class="p-cat">Team</span></div></div>
+    <div class="mi" data-cat="hackathon" data-cap="BuildSprint 2023 — midnight coding" data-tag="Hackathon" data-date="Nov 2023"><div class="ph r-ls"><div class="pbg" style="background-image:linear-gradient(130deg,rgba(10,10,10,.18) 0%,rgba(10,10,10,.64) 100%),url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center"></div><div class="pov"><span class="p-tag">Hackathon</span><span class="p-cap">BuildSprint 2023 — Midnight Sprint</span><span class="p-date">Nov 2023</span></div><span class="p-cat">Hackathon</span></div></div>
+    <div class="mi" data-cat="workshop" data-cap="Open Source Day" data-tag="Workshop" data-date="Sep 2023"><div class="ph r-pt"><div class="pbg" style="background-image:linear-gradient(165deg,rgba(10,10,10,.12) 0%,rgba(10,10,10,.58) 100%),url('https://images.unsplash.com/photo-1622675205169-901710ac8643?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center"></div><div class="pov"><span class="p-tag">Workshop</span><span class="p-cap">Open Source Day — First PR</span><span class="p-date">Sep 2023</span></div><span class="p-cat">Workshop</span></div></div>
+    <div class="mi" data-cat="builds" data-cap="Robowar 2024 — battle bots" data-tag="Builds" data-date="Mar 2024"><div class="ph r-sq"><div class="pbg" style="background-image:linear-gradient(125deg,rgba(10,10,10,.1) 0%,rgba(10,10,10,.58) 100%),url('https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center"></div><div class="pov"><span class="p-tag">Builds</span><span class="p-cap">Robowar 2024 — Battle Bots</span><span class="p-date">Mar 2024</span></div><span class="p-cat">Builds</span></div></div>
+    <div class="mi" data-cat="team" data-cap="Club launch day — founding members, 2021" data-tag="Team" data-date="Dec 2021"><div class="ph r-wd"><div class="pbg" style="background-image:linear-gradient(108deg,rgba(10,10,10,.14) 0%,rgba(10,10,10,.52) 100%),url('https://images.unsplash.com/photo-1622675363311-3e1904dc1885?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center"></div><div class="pov"><span class="p-tag">Team</span><span class="p-cap">Club Launch — Founding Members</span><span class="p-date">Dec 2021</span></div><span class="p-cat">Team</span></div></div>
+  </div>
+</section>
+
+<div class="gal-stats">
+  <div class="gs rv d1"><div class="gs-n">12<span class="acc">+</span></div><div class="gs-l">Events documented</div></div>
+  <div class="gs rv d2"><div class="gs-n">30<span class="acc">+</span></div><div class="gs-l">Projects built</div></div>
+  <div class="gs rv d3"><div class="gs-n">4</div><div class="gs-l">Years of memories</div></div>
+  <div class="gs rv d4"><div class="gs-n">120<span class="acc">+</span></div><div class="gs-l">Faces in the frame</div></div>
+</div>
+
+<div class="sub-strip rv">
+  <p class="sub-t">Have photos from an I&amp;DIY event?<br><strong>Share them with us.</strong></p>
+  <a href="mailto:innovationanddiy@gmail.com" class="bp">Submit Photos <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div>
+
+<!-- Lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <div class="lb-in">
+    <div class="lb-img" id="lbImg"><span style="font-size:48px;opacity:.15">&#128247;</span></div>
+    <div class="lb-meta">
+      <div><div class="lb-tag" id="lbTag"></div><div class="lb-cap" id="lbCap"></div><div class="lb-date" id="lbDate"></div></div>
+      <button class="lb-close" id="lbClose" aria-label="Close">&#10005;</button>
+    </div>
+    <button class="lb-arr lb-prev" id="lbPrev" aria-label="Previous"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <button class="lb-arr lb-next" id="lbNext" aria-label="Next"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  </div>
+</div>
+
+<!-- ═══════════════════ FAQ ═══════════════════ -->
+<div id="faq" style="scroll-margin-top:80px"></div>
+<header class="faq-hdr">
+  <div><div class="stag rv d1">Got questions?</div><h1 class="faq-hh rv d2">Good.<br><em>Ask away.</em></h1></div>
+  <div class="rv d3">
+    <p class="faq-desc">Everything you need to know about <strong>joining, building, and belonging</strong> at Innovation &amp; DIY.</p>
+    <div class="faq-sw">
+      <input class="faq-si" type="search" id="faqSearch" placeholder="Search questions…" autocomplete="off">
+      <svg class="faq-sico" width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.3"/><path d="M11 11l3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+    </div>
+  </div>
+</header>
+
+<div class="faq-cats rv">
+  <span class="faq-cl">Filter by</span>
+  <button class="fcb active" data-cat="all">All</button>
+  <button class="fcb" data-cat="joining">Joining</button>
+  <button class="fcb" data-cat="projects">Projects</button>
+  <button class="fcb" data-cat="events">Events</button>
+  <button class="fcb" data-cat="general">General</button>
+</div>
+
+<div class="faq-body">
+  <aside class="faq-sb">
+    <span class="faq-sb-lbl">Jump to</span>
+    <ul class="faq-toc">
+      <li><button class="faq-tb active" data-target="joining">Joining the Club</button></li>
+      <li><button class="faq-tb" data-target="projects">Projects &amp; Builds</button></li>
+      <li><button class="faq-tb" data-target="fevents">Events &amp; Hackathons</button></li>
+      <li><button class="faq-tb" data-target="general">General</button></li>
+    </ul>
+  </aside>
+  <main class="faq-main" id="faqMain">
+    <div class="faq-nr" id="faqNr"><span class="faq-nr-ico">&#128269;</span><span class="faq-nr-t">No questions match your search. <a href="mailto:innovationanddiy@gmail.com" style="color:var(--accent)">Ask us directly.</a></span></div>
+
+    <div class="faq-grp" id="group-joining" data-cat="joining">
+      <div class="faq-ghdr"><span class="faq-gn">Joining the Club</span><div class="faq-gl"></div><span class="faq-gc">05 questions</span></div>
+      <div class="faq-item" data-cat="joining"><button class="faq-q"><span class="faq-qt">Who can join Innovation &amp; DIY?</span><span class="faq-ico"><span class="fiq-h"></span><span class="fiq-v"></span></span></button><div class="faq-aw"><div class="faq-ai"><div class="faq-ans"><strong>Anyone at MITS, from any branch and any year.</strong> We have members from Computer Science, Electronics, Mechanical, Civil, and beyond. The only requirement is curiosity.</div></div></div></div>
+      <div class="faq-item" data-cat="joining"><button class="faq-q"><span class="faq-qt">How do I actually join?</span><span class="faq-ico"><span class="fiq-h"></span><span class="fiq-v"></span></span></button><div class="faq-aw"><div class="faq-ai"><div class="faq-ans">Follow us on Instagram <strong>@innovationanddiy</strong> — we announce open recruitment drives there. When recruitment opens, fill out a short form, and we invite you to a meet-and-greet. No interviews, no tests.</div></div></div></div>
+      <div class="faq-item" data-cat="joining"><button class="faq-q"><span class="faq-qt">Is there a membership fee?</span><span class="faq-ico"><span class="fiq-h"></span><span class="fiq-v"></span></span></button><div class="faq-aw"><div class="faq-ai"><div class="faq-ans">A small annual fee may apply to cover materials and event costs. The amount is minimal and announced at the start of each academic year. <strong>No one is turned away for financial reasons.</strong></div></div></div></div>
+      <div class="faq-item" data-cat="joining"><button class="faq-q"><span class="faq-qt">Can I choose which department I join?</span><span class="faq-ico"><span class="fiq-h"></span><span class="fiq-v"></span></span></button><div class="faq-aw"><div class="faq-ai"><div class="faq-ans">Yes. When you join, you can express a preference for any of the six departments. We do our best to match preferences. <strong>Nothing is permanent</strong> — you can move and grow.</div></div></div></div>
+      <div class="faq-item" data-cat="joining"><button class="faq-q"><span class="faq-qt">How much time does it take per week?</span><span class="faq-ico"><span class="fiq-h"></span><span class="fiq-v"></span></span></button><div class="faq-aw"><div class="faq-ai"><div class="faq-ans">Regular members typically spend <strong>2–4 hours a week.</strong> During hackathon season it can spike. We respect that academics come first.</div></div></div></div>
+    </div>
+
+    <div class="faq-grp" id="group-projects" data-cat="projects">
+      <div class="faq-ghdr"><span class="faq-gn">Projects &amp; Builds</span><div class="faq-gl"></div><span class="faq-gc">04 questions</span></div>
+      <div class="faq-item" data-cat="projects"><button class="faq-q"><span class="faq-qt">What kind of projects can I work on?</span><span class="faq-ico"><span class="fiq-h"></span><span class="fiq-v"></span></span></button><div class="faq-aw"><div class="faq-ai"><div class="faq-ans">Anything that can be built. Past projects include <strong>Arduino automation, web apps, IoT devices, robots, 3D-printed prototypes, and more.</strong> You can propose your own or join an ongoing one.</div></div></div></div>
+      <div class="faq-item" data-cat="projects"><button class="faq-q"><span class="faq-qt">Do I need coding or electronics knowledge?</span><span class="faq-ico"><span class="fiq-h"></span><span class="fiq-v"></span></span></button><div class="faq-aw"><div class="faq-ai"><div class="faq-ans"><strong>Not at all.</strong> Every project team needs people who can design, document, test, and present. If you want to learn coding or electronics, we have workshops and senior members who will teach you.</div></div></div></div>
+      <div class="faq-item" data-cat="projects"><button class="faq-q"><span class="faq-qt">Does the club provide materials and equipment?</span><span class="faq-ico"><span class="fiq-h"></span><span class="fiq-v"></span></span></button><div class="faq-aw"><div class="faq-ai"><div class="faq-ans">For club-sanctioned projects, <strong>yes — within budget.</strong> We maintain a component library and can apply for institute funding for larger builds.</div></div></div></div>
+      <div class="faq-item" data-cat="projects"><button class="faq-q"><span class="faq-qt">Can I pitch my own project idea?</span><span class="faq-ico"><span class="fiq-h"></span><span class="fiq-v"></span></span></button><div class="faq-aw"><div class="faq-ai"><div class="faq-ans"><strong>Absolutely — this is encouraged.</strong> We run internal pitch sessions where members propose ideas and recruit teammates. Some of our best projects started as rough sketches from first-year students.</div></div></div></div>
+    </div>
+
+    <div class="faq-grp" id="group-fevents" data-cat="events">
+      <div class="faq-ghdr"><span class="faq-gn">Events &amp; Hackathons</span><div class="faq-gl"></div><span class="faq-gc">04 questions</span></div>
+      <div class="faq-item" data-cat="events"><button class="faq-q"><span class="faq-qt">What is BuildSprint?</span><span class="faq-ico"><span class="fiq-h"></span><span class="fiq-v"></span></span></button><div class="faq-aw"><div class="faq-ai"><div class="faq-ans">BuildSprint is our flagship annual <strong>24-hour hackathon.</strong> Teams of 2–4 work through the night to build a working prototype. There are mentors, prizes, and a lot of very tired but very proud faces at the end.</div></div></div></div>
+      <div class="faq-item" data-cat="events"><button class="faq-q"><span class="faq-qt">Do I need a team to participate?</span><span class="faq-ico"><span class="fiq-h"></span><span class="fiq-v"></span></span></button><div class="faq-aw"><div class="faq-ai"><div class="faq-ans">For hackathons, teams of 2–4 are ideal. <strong>If you don't have a team, we help you find one.</strong> We run a team-formation session before every hackathon for solo participants.</div></div></div></div>
+      <div class="faq-item" data-cat="events"><button class="faq-q"><span class="faq-qt">Are events open to non-members?</span><span class="faq-ico"><span class="fiq-h"></span><span class="fiq-v"></span></span></button><div class="faq-aw"><div class="faq-ai"><div class="faq-ans">Most workshops and talks are <strong>open to all MITS students,</strong> member or not. Hackathons may have priority registration for members, but we try to keep spots available for everyone.</div></div></div></div>
+      <div class="faq-item" data-cat="events"><button class="faq-q"><span class="faq-qt">How do I stay updated on upcoming events?</span><span class="faq-ico"><span class="fiq-h"></span><span class="fiq-v"></span></span></button><div class="faq-aw"><div class="faq-ai"><div class="faq-ans">Follow <strong>@innovationanddiy</strong> on Instagram — that's where we announce everything first. We also post on LinkedIn.</div></div></div></div>
+    </div>
+
+    <div class="faq-grp" id="group-general" data-cat="general">
+      <div class="faq-ghdr"><span class="faq-gn">General</span><div class="faq-gl"></div><span class="faq-gc">03 questions</span></div>
+      <div class="faq-item" data-cat="general"><button class="faq-q"><span class="faq-qt">Is Innovation &amp; DIY an official MITS club?</span><span class="faq-ico"><span class="fiq-h"></span><span class="fiq-v"></span></span></button><div class="faq-aw"><div class="faq-ai"><div class="faq-ans">Yes. Innovation &amp; DIY is an officially recognized student club at <strong>Madhav Institute of Technology &amp; Science, Gwalior,</strong> established in 2021.</div></div></div></div>
+      <div class="faq-item" data-cat="general"><button class="faq-q"><span class="faq-qt">Can companies collaborate with us?</span><span class="faq-ico"><span class="fiq-h"></span><span class="fiq-v"></span></span></button><div class="faq-aw"><div class="faq-ai"><div class="faq-ans"><strong>Yes — we're always open to it.</strong> We welcome collaborations for workshops, hackathon sponsorships, real-world project briefs, and speaker sessions. Email us at <a href="mailto:innovationanddiy@gmail.com">innovationanddiy@gmail.com</a>.</div></div></div></div>
+      <div class="faq-item" data-cat="general"><button class="faq-q"><span class="faq-qt">My question isn't here. What do I do?</span><span class="faq-ico"><span class="fiq-h"></span><span class="fiq-v"></span></span></button><div class="faq-aw"><div class="faq-ai"><div class="faq-ans">Just ask. DM us on Instagram <strong>@innovationanddiy</strong>, or email <a href="mailto:innovationanddiy@gmail.com">innovationanddiy@gmail.com</a>. We respond fast.</div></div></div></div>
+    </div>
+  </main>
+</div>
+
+<section class="curious-s">
+  <div class="rv d1"><h2 class="curious-h">Still curious?<br><strong>Let's talk.</strong></h2></div>
+  <div class="rv d2">
+    <p class="curious-b">No FAQ covers everything. <strong>Just reach out directly.</strong> We respond to every message.</p>
+    <div class="curious-acts">
+      <a href="mailto:innovationanddiy@gmail.com" class="bp">Email Us <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://instagram.com/innovationanddiy" class="bg">Instagram DM</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CONTACT ═══════════════════ -->
+<div id="contact" style="scroll-margin-top:80px"></div>
+<header class="con-hero">
+  <div class="con-hero-in">
+    <div><div class="stag rv d1">Let's talk</div><h1 class="con-hh rv d2">Say<br><span class="acc">hello.</span><em>We don't bite.</em></h1></div>
+    <div class="con-info rv d3">
+      <a href="mailto:innovationanddiy@gmail.com" class="cc"><div class="ccl"><div class="cc-ico">&#9993;</div><div><div class="cc-lbl">Email us</div><div class="cc-val">innovationanddiy@gmail.com</div></div></div><svg class="cc-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://instagram.com/innovationanddiy" target="_blank" rel="noopener" class="cc"><div class="ccl"><div class="cc-ico">&#128247;</div><div><div class="cc-lbl">Instagram</div><div class="cc-val">@innovationanddiy</div></div></div><svg class="cc-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://linkedin.com/company/innovationanddiy" target="_blank" rel="noopener" class="cc"><div class="ccl"><div class="cc-ico">&#128188;</div><div><div class="cc-lbl">LinkedIn</div><div class="cc-val">@innovationanddiy</div></div></div><svg class="cc-arr" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</header>
+
+<div class="con-main">
+  <div class="form-side rv d1">
+    <h2 class="form-hh">Drop us <em>a message.</em></h2>
+    <p class="form-sub">Whether you want to join, collaborate, or just say something — fill this in and we'll get back to you.</p>
+    <div class="intent-sel" id="intentSel">
+      <button class="ib active" data-intent="join">Join the club</button>
+      <button class="ib" data-intent="collab">Collaborate</button>
+      <button class="ib" data-intent="event">Event query</button>
+      <button class="ib" data-intent="project">Project idea</button>
+      <button class="ib" data-intent="other">Something else</button>
+    </div>
+    <form id="cform" novalidate>
+      <input type="hidden" id="intentF" value="Join the club">
+      <div class="form-row">
+        <div class="fg"><label class="fl2" for="fname">First name <span class="req">*</span></label><input class="fi" type="text" id="fname" placeholder="Arjun" required autocomplete="given-name"></div>
+        <div class="fg"><label class="fl2" for="lname">Last name <span class="req">*</span></label><input class="fi" type="text" id="lname" placeholder="Sharma" required autocomplete="family-name"></div>
+      </div>
+      <div class="fg"><label class="fl2" for="email">Email address <span class="req">*</span></label><input class="fi" type="email" id="email" placeholder="you@mits.ac.in" required autocomplete="email"></div>
+      <div class="form-row">
+        <div class="fg"><label class="fl2" for="branch">Branch</label><select class="fsel" id="branch"><option value="">Select branch</option><option>Computer Science</option><option>Electronics &amp; Communication</option><option>Mechanical Engineering</option><option>Civil Engineering</option><option>Information Technology</option><option>Electrical Engineering</option><option>Other</option></select></div>
+        <div class="fg"><label class="fl2" for="year">Year</label><select class="fsel" id="year"><option value="">Select year</option><option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option><option>Alumni / External</option></select></div>
+      </div>
+      <div class="fg"><label class="fl2" for="msg">Message <span class="req">*</span></label><textarea class="ft2" id="msg" placeholder="Tell us what's on your mind…" required maxlength="600" rows="5"></textarea><div class="ffoot"><span></span><span class="cc2" id="cc2">0 / 600</span></div></div>
+      <div class="form-sub2"><span class="sub-note">We reply within 24–48 hrs</span><button type="submit" class="bsend">Send Message <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+    </form>
+    <div class="fsuc" id="fsuc">
+      <div class="fsuc-ico">&#10003;</div>
+      <div class="fsuc-h">Message sent.</div>
+      <p class="fsuc-b">Thanks for reaching out. We'll get back to you within 24–48 hours. Keep building! &#128295;</p>
+      <button class="fsuc-r" id="freset">Send another message</button>
+    </div>
+  </div>
+  <div class="det-side">
+    <div class="rv d1">
+      <span class="uc-lbl">Good for</span>
+      <div class="uc-list">
+        <div class="uci"><span class="uci-dot"></span>Joining Innovation &amp; DIY as a new member</div>
+        <div class="uci"><span class="uci-dot"></span>Pitching a collab, sponsorship, or workshop</div>
+        <div class="uci"><span class="uci-dot"></span>Asking about a specific event or project</div>
+        <div class="uci"><span class="uci-dot"></span>Sharing a project idea you want to build</div>
+        <div class="uci"><span class="uci-dot"></span>Just saying hi — we genuinely don't mind</div>
+      </div>
+    </div>
+    <div class="rc rv d2"><div class="rc-hdr"><div class="rc-dot"></div><span class="rc-ti">Response time</span></div><p class="rc-b">We aim to reply within <strong>24–48 hours</strong> on weekdays. For urgent queries, DM us directly on <strong>Instagram</strong> — that's the fastest route.</p></div>
+    <div class="rv d3">
+      <span class="sl-lbl">Find us</span>
+      <div class="sl-list">
+        <a href="https://instagram.com/innovationanddiy" target="_blank" rel="noopener" class="sli"><span>Instagram</span><span class="sl-handle">@innovationanddiy</span><svg class="sl-arr" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="https://linkedin.com/company/innovationanddiy" target="_blank" rel="noopener" class="sli"><span>LinkedIn</span><span class="sl-handle">@innovationanddiy</span><svg class="sl-arr" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="mailto:innovationanddiy@gmail.com" class="sli"><span>Email</span><span class="sl-handle">innovationanddiy@gmail.com</span><svg class="sl-arr" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+    <div class="loc-b rv d4"><span class="loc-lbl">Where we are</span><div class="loc-n">Madhav Institute of Technology &amp; Science</div><div class="loc-a">Race Course Road, Gwalior, Madhya Pradesh — 474005, India</div></div>
+  </div>
+</div>
+
+<section class="coll-s">
+  <div class="rv d1"><div class="stag">Work with us</div><h2 class="coll-hh">Open to<br><em>everything.</em></h2><p class="coll-b">We're always looking for <strong>projects, events, and collaborations</strong> that push our members to learn and build.</p></div>
+  <div class="coll-g rv d2">
+    <div class="ct"><span class="ct-ico">&#127942;</span><div class="ct-n">Sponsor an Event</div><div class="ct-d">Fund a hackathon or workshop and get in front of 120+ technical students.</div></div>
+    <div class="ct"><span class="ct-ico">&#127897;&#65039;</span><div class="ct-n">Run a Workshop</div><div class="ct-d">Bring your expertise to our members. Hands-on sessions always go down best.</div></div>
+    <div class="ct"><span class="ct-ico">&#128279;</span><div class="ct-n">Project Collab</div><div class="ct-d">Have a real problem? Our Projects &amp; R&amp;D team would love to take a crack at it.</div></div>
+    <div class="ct"><span class="ct-ico">&#128226;</span><div class="ct-n">Outreach Partner</div><div class="ct-d">Co-promote, cross-publish, or build community together with I&amp;DIY.</div></div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<section class="pf">
+  <div class="pf-ghost" aria-hidden="true"><span>BUILD.</span></div>
+  <div class="pf-cont">
+    <div class="pf-ey">Est. 2021 &middot; MITS Gwalior</div>
+    <h2 class="pf-hh rv d1">Ready to<br><em>make things?</em></h2>
+    <p class="pf-sub rv d2">120+ members. 30+ projects. 12+ events. <strong>One community built on curiosity.</strong> No prerequisites. No gatekeeping.</p>
+    <div class="pf-acts rv d3">
+      <a href="#contact" class="bp" style="padding:15px 32px">Join Innovation &amp; DIY <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="mailto:innovationanddiy@gmail.com" class="bg" style="padding:15px 28px">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-top">
+    <div class="rv d1">
+      <a href="#home" class="ft-logo">I<span>&amp;</span>DIY</a>
+      <p class="ft-tag">Built on curiosity.<br>Driven by making.</p>
+      <div class="ft-socs">
+        <a href="https://instagram.com/innovationanddiy" class="sp" target="_blank" rel="noopener"><span class="sp-d"></span>Instagram</a>
+        <a href="https://linkedin.com/company/innovationanddiy" class="sp" target="_blank" rel="noopener"><span class="sp-d"></span>LinkedIn</a>
+      </div>
+    </div>
+    <div class="rv d1"><span class="fc-lbl">Navigate</span><ul class="flinks"><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#events">Events</a></li><li><a href="#team">Team</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></div>
+    <div class="rv d2"><span class="fc-lbl">Club</span><ul class="flinks"><li><a href="#contact">Join the Club</a></li><li><a href="#events">Upcoming Events</a></li><li><a href="#gallery">Project Gallery</a></li><li><a href="#team">Meet the Team</a></li><li><a href="#events">BuildSprint 2025</a></li><li><a href="mailto:innovationanddiy@gmail.com">Submit Photos</a></li></ul></div>
+    <div class="rv d3"><span class="fc-lbl">Connect</span><ul class="flinks"><li><a href="mailto:innovationanddiy@gmail.com">innovationanddiy@gmail.com</a></li><li><a href="https://instagram.com/innovationanddiy">@innovationanddiy</a></li><li><a href="https://linkedin.com/company/innovationanddiy">LinkedIn</a></li></ul><div class="fcgap"><span class="fc-lbl">Institute</span><ul class="flinks"><li><a href="#">MITS Gwalior</a></li><li><a href="#">Est. 2021 &middot; Open to all</a></li></ul></div></div>
+  </div>
+
+  <div class="fmq" aria-hidden="true">
+    <div class="fmqt">
+      <span class="fmqi"><span class="mi-sep"></span>Innovation <span class="mi-acc">&amp;</span> DIY</span><span class="fmqi"><span class="mi-sep"></span>Built on curiosity</span><span class="fmqi"><span class="mi-sep"></span>Driven by making</span><span class="fmqi"><span class="mi-sep"></span>120+ Members</span><span class="fmqi"><span class="mi-sep"></span>30+ Projects Built</span><span class="fmqi"><span class="mi-sep"></span>12+ Events</span><span class="fmqi"><span class="mi-sep"></span>MITS Gwalior &middot; Est. 2021</span><span class="fmqi"><span class="mi-sep"></span>Do It Yourself</span>
+      <span class="fmqi"><span class="mi-sep"></span>Innovation <span class="mi-acc">&amp;</span> DIY</span><span class="fmqi"><span class="mi-sep"></span>Built on curiosity</span><span class="fmqi"><span class="mi-sep"></span>Driven by making</span><span class="fmqi"><span class="mi-sep"></span>120+ Members</span><span class="fmqi"><span class="mi-sep"></span>30+ Projects Built</span><span class="fmqi"><span class="mi-sep"></span>12+ Events</span><span class="fmqi"><span class="mi-sep"></span>MITS Gwalior &middot; Est. 2021</span><span class="fmqi"><span class="mi-sep"></span>Do It Yourself</span>
+    </div>
+  </div>
+
+  <div class="ft-bot">
+    <div class="ft-bl">
+      <span class="ftcopy">&#169; <span id="yr"></span> Innovation <span class="ca">&amp;</span> DIY Club, MITS Gwalior.</span>
+      <div class="ftleg"><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+    <div class="ft-br">
+      <div class="sbadge"><div class="sbd"></div>Recruiting &middot; 2025–26</div>
+      <a href="#home" class="btt" id="btt" aria-label="Back to top"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 11V3M3 7l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="app.js">
+
+</script>
+</div>
+</body>
+</html>

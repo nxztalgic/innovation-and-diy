@@ -237,6 +237,21 @@ function extractBgUrl(bg){
   var match=bg.dataset.bg.match(/url\(['"]?([^'")]+)['"]?\)/);
   return match?match[1]:'';
 }
+function createStaticLbMedia(el,src){
+  if(!el)return null;
+  el.innerHTML='';
+  if(!src){
+    el.innerHTML='<div class="lb-fallback" style="font-size:48px;opacity:.15">&#128247;</div>';
+    return null;
+  }
+  var img=document.createElement('img');
+  img.alt='';
+  img.draggable=false;
+  img.src=src;
+  img.style.opacity='1';
+  el.appendChild(img);
+  return null;
+}
 function destroyLbEffects(){
   lbEffects.forEach(function(effect){if(effect&&effect.destroy)effect.destroy();});
   lbEffects=[];
@@ -400,13 +415,18 @@ function renderLbSlides(items){
   items.forEach(function(item){
     var bg=item.querySelector('.pbg');
     loadGalleryBg(bg);
+    var src=extractBgUrl(bg);
     var slide=document.createElement('div');
     var media=document.createElement('div');
     slide.className='swiper-slide lb-slide';
     media.className='lb-media';
     slide.appendChild(media);
     lbWrap.appendChild(slide);
-    lbEffects.push(new LightboxPixelDistortion(media,extractBgUrl(bg)));
+    if(isTouchDevice){
+      lbEffects.push(createStaticLbMedia(media,src));
+    }else{
+      lbEffects.push(new LightboxPixelDistortion(media,src));
+    }
   });
 }
 function ensureLbSwiper(startIdx){
@@ -445,7 +465,11 @@ function openLb(idx){
     var bg=item.querySelector('.pbg');
     loadGalleryBg(bg);
     lbWrap.innerHTML='<div class="swiper-slide lb-slide"><div class="lb-media"></div></div>';
-    lbEffects=[new LightboxPixelDistortion(lbWrap.querySelector('.lb-media'),extractBgUrl(bg))];
+    if(isTouchDevice){
+      lbEffects=[createStaticLbMedia(lbWrap.querySelector('.lb-media'),extractBgUrl(bg))];
+    }else{
+      lbEffects=[new LightboxPixelDistortion(lbWrap.querySelector('.lb-media'),extractBgUrl(bg))];
+    }
     ensureActiveLbEffect(0);
   }
   syncLbMeta(item);

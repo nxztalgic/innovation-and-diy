@@ -714,6 +714,9 @@ footer{border-top:1px solid var(--border);padding:64px 48px 0}
   .loader__text{font-size:clamp(28px,9vw,40px)}
   .tl-btn{width:42px;height:42px}
 }
+@media (max-width:400px){
+  .hero-badge{top:88px;right:20px}
+}
 @media (hover:none),(pointer:coarse){
   body{cursor:auto}
   .cursor{display:none}
